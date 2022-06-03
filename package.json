@@ -1,0 +1,25 @@
+{
+  "name": "lens",
+  "version": "1.0.0",
+  "description": "LENS is a link short-cutter",
+  "main": "app.js",
+  "scripts": {
+    "test": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlackIQ/lens.git"
+  },
+  "keywords": [
+    "LENS",
+    "node",
+    "express",
+    "mongodb"
+  ],
+  "author": "Amirhossein Mohammadi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BlackIQ/lens/issues"
+  },
+  "homepage": "https://github.com/BlackIQ/lens#readme"
+}
