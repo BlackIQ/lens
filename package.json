@@ -4,7 +4,7 @@
   "description": "LENS is a link short-cutter",
   "main": "app.js",
   "scripts": {
-    "statt": "node app.js",
+    "start": "node app.js",
     "test": "nodemon app.js"
   },
   "repository": {
