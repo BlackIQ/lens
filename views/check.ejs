@@ -13,8 +13,8 @@
     <div>
         <h1>Data of your link</h1>
         <ul>
-            <li>Your link: <%= link.link %></li>
-            <li>Your lens link: <%= link.lensLink %></li>
+            <li>Your link: <a href="<%= link.link %>"><%= link.link %></a></li>
+            <li>Your lens link: <a href="/l/<%= link.lensLink %>"><%= link.lensLink %></a></li>
             <li>Your views: <%= link.views %></li>
         </ul>
     </div>
