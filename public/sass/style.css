@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&family=Dosis:wght@500&display=swap");
+body {
+  background: #f1f1f1;
+  font-family: 'Dosis', sans-serif;
+}
+
+.welcome {
+  font-family: 'Concert One', cursive;
+}
+
+.fg-color {
+  color: #004042 !important;
+}
+/*# sourceMappingURL=style.css.map */
