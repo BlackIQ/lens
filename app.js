@@ -1,5 +1,8 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const randomstring = require('randomstring');
+
+const Link = require('./modules/link');
 
 require('dotenv').config();
 const env = process.env;
@@ -29,7 +32,23 @@ app.get('/new', (req, res) => {
 });
 
 app.post('/new', (req, res) => {
-    res.send(req.body);
+    const newLinkData = {
+        link: req.body.link,
+        lensLink: randomstring.generate({length: 5, charset: 'alphabetic'}),
+        views: 0
+    };
+
+    const newLink = new Link(newLinkData);
+
+    newLink.save()
+        .then((result) => res.redirect(`/check/${result._id}`))
+        .catch((error) => res.send(error));
+});
+
+app.get('/check/:id', (req, res) => {
+    Link.findById(req.params.id)
+        .then((link) => res.render('check', {link}))
+        .catch((error) => res.send(error));
 });
 
 app.get('/link/:link', (req, res) => {
