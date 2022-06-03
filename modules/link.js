@@ -12,7 +12,7 @@ const linkModule = new Scheme({
         required: true
     },
     views: {
-        type: Int32Array,
+        type: Number,
         required: true
     }
 }, {
