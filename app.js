@@ -51,10 +51,8 @@ app.get('/check/:id', (req, res) => {
         .catch((error) => res.send(error));
 });
 
-app.get('/link/:link', (req, res) => {
-    const outConst = {
-        link: req.params.link
-    };
-
-    res.render('link', outConst);
+app.get('/l/:link', (req, res) => {
+    Link.findOneAndUpdate({ lensLink: req.params.link }, { $inc: { "views" : 1 } })
+        .then((link) => res.redirect(link.link))
+        .catch((error) => res.send(error));
 });
