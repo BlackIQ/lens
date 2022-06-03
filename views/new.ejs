@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New LENS.</title>
+
+    <link type="text/css" rel="stylesheet" href="css/mdb.min.css" />
+    <link type="text/css" rel="stylesheet" href="sass/style.css" />
+</head>
+<body>
+    <div class="d-flex vh-100 justify-content-center align-items-center">
+        <div class="col-md-4">
+            <div class="m-1">
+                <div class="card">
+                    <div class="card-body">
+                        <form method="post" action="/new">
+                            <label class="form-label" for="link">Link</label>
+                            <input class="form-control" id="link" name="link" placeholder="Link" />
+                            <br />
+                            <button type="submit" class="btn btn-light w-100 border">Cut it!</button>
+                        </form>
+                        <hr/>
+                        <ul>
+                            <li>Copy you link here and submit it.</li>
+                            <li>No mather how the link is.</li>
+                            <li>After submit, you get short link and an id</li>
+                        </ul>
+                        <span class="text-danger">Just remember the id or link</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/mdb.min.js"></script>
+</body>
+</html>
